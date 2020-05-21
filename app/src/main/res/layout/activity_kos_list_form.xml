@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KosListForm"
+    android:background="@color/purple">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:text="Kos List"
+        android:textStyle="bold"
+        android:textSize="30dp"
+
+
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@color/blue" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_koslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_list_kos">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

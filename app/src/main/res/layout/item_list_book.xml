@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:outlineAmbientShadowColor="@color/white">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_kos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bpicture"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/btv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="70dp"
+                android:text="Kos Rumah Melati"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bpicture"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/btv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 1.500.00,00/Bulan"
+                android:textColor="@color/blue"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="@+id/btv_name"
+                app:layout_constraintTop_toBottomOf="@+id/btv_name" />
+
+            <TextView
+                android:id="@+id/btv_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kode Book:BK00101-01-2020"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="@+id/btv_price"
+                app:layout_constraintTop_toBottomOf="@+id/btv_price" />
+
+            <TextView
+                android:id="@+id/btv_kosid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kos ID: K001"
+                app:layout_constraintStart_toStartOf="@+id/btv_ID"
+                app:layout_constraintTop_toBottomOf="@+id/btv_ID"
+                android:textSize="12dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
